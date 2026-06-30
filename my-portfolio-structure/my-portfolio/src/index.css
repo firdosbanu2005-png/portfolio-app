@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ── DARK THEME (default) ── */
+:root,
+[data-theme="dark"] {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #111116;
+    --bg-card: #16161f;
+    --bg-card-hover: #1e1e2a;
+    --border: rgba(139, 92, 246, 0.18);
+    --border-hover: #8b5cf6;
+    --text-primary: #f0f0f0;
+    --text-secondary: #a0a0b0;
+    --text-muted: #5a5a72;
+    --accent: #8b5cf6;
+    --accent-light: #a78bfa;
+    --accent-dim: rgba(139, 92, 246, 0.12);
+    --nav-bg: rgba(10, 10, 10, 0.95);
+    --shadow: rgba(139, 92, 246, 0.15);
+    --input-bg: #16161f;
+    --hero-grad-1: #0a0a0a;
+    --hero-grad-2: #130d22;
+}
+
+/* ── LIGHT THEME ── */
+[data-theme="light"] {
+    --bg-primary: #faf8f4;
+    --bg-secondary: #f2ede4;
+    --bg-card: #ffffff;
+    --bg-card-hover: #fdf9f3;
+    --border: rgba(139, 92, 246, 0.2);
+    --border-hover: #7c3aed;
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a6a;
+    --text-muted: #9090aa;
+    --accent: #7c3aed;
+    --accent-light: #8b5cf6;
+    --accent-dim: rgba(124, 58, 237, 0.08);
+    --nav-bg: rgba(250, 248, 244, 0.95);
+    --shadow: rgba(124, 58, 237, 0.12);
+    --input-bg: #f2ede4;
+    --hero-grad-1: #faf8f4;
+    --hero-grad-2: #ede5f8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}

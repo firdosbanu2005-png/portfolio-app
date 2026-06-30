@@ -1,0 +1,87 @@
+.experience {
+    background: var(--bg-primary);
+    transition: background 0.35s ease;
+}
+
+.experience-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.experience-card {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 30px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    transition: transform 0.3s ease, border-color 0.3s ease, background 0.35s ease;
+}
+
+.experience-card:hover {
+    transform: translateX(6px);
+    border-color: var(--border-hover);
+}
+
+.exp-left {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 4px;
+}
+
+.exp-duration {
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+}
+
+.exp-right h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.exp-right h4 {
+    font-size: 0.92rem;
+    color: var(--accent-light);
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.exp-right p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.exp-tags .tag {
+    background: var(--accent-dim);
+    border: 1px solid var(--border);
+    color: var(--accent);
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .experience-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}
